@@ -121,7 +121,7 @@ public class Wallet extends AppCompatActivity {
 
 
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-6922743115082307/2523284779");
+        mInterstitialAd.setAdUnitId("ca-app-pub-6922743115082307/7665554951");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
         mInterstitialAd.setAdListener(new AdListener() {

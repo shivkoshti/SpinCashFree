@@ -26,8 +26,8 @@ android {
         manifestPlaceholders = [onesignal_app_id: 'c3d5a7e9-96b9-4651-8f82-42c81b1a1cf4', onesignal_google_project_number: 'REMOTE']
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 2
-        versionName "2.0"
+        versionCode 3
+        versionName "3.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

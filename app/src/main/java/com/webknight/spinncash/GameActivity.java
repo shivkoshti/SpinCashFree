@@ -195,7 +195,7 @@ public class GameActivity extends AppCompatActivity {
             }
         });
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-6922743115082307/2523284779");
+        mInterstitialAd.setAdUnitId("ca-app-pub-6922743115082307/5422534992");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
         mInterstitialAd.setAdListener(new AdListener() {
