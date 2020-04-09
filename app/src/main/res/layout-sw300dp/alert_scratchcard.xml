@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:padding="2dp">
+
+    <in.codeshuffle.scratchcardlayout.ui.ScratchCardLayout
+        android:id="@+id/scratchCard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/trophy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="You won"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/rvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </in.codeshuffle.scratchcardlayout.ui.ScratchCardLayout>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebackground"
+    tools:context=".GameActivity">
+
+    <com.jetradarmobile.snowfall.SnowfallView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:snowflakeAlphaMax="255"
+        app:snowflakeAlphaMin="50"
+        app:snowflakeAngleMax="5"
+        app:snowflakeImage="@drawable/snowflake"
+        app:snowflakeSizeMax="32dp"
+        app:snowflakeSizeMin="18dp"
+        app:snowflakeSpeedMax="25"
+        app:snowflakeSpeedMin="25"
+        app:snowflakesAlreadyFalling="true"
+        app:snowflakesFadingEnabled="true"
+        app:snowflakesNum="250" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/logo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/logo"
+            android:textSize="17sp"
+            app:button_duration="550"
+            app:button_scale="0.87" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/wallet"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="2dp"
+                android:background="@drawable/walletbg"
+                android:drawableEnd="@drawable/ruy"
+                android:fontFamily="@font/gametext"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="0"
+                android:textColor="@color/green"
+                android:textSize="17sp"
+                app:corners="32"
+                app:height_weight="0.8"
+                app:width_weight="1.0" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.webknight.spinwheel.LuckyWheelView
+        android:id="@+id/luckyWheel"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:lkwCenterImage="@drawable/wheel2"
+        app:lkwCursor="@drawable/ic_cursor"
+        app:lkwTopTextColor="@color/black" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/speenWheel"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/adview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btnnbg2"
+        android:textSize="17sp"
+        app:button_cornerRadius="4dp"
+        app:button_duration="550"
+        app:button_scale="0.87" />
+
+    <ImageView
+        android:id="@+id/speenWheelback"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/adview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btnbg1" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6922743115082307/8433608079">
+
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="green">#00eb3f</color>
+    <color name="orange">#ffa200</color>
+    <color name="white">#FFF</color>
+    <color name="pending">#FFC107</color>
+    <color name="approved">#8BC34A</color>
+    <color name="declined">#F44336</color>
+    <color name="darkgreen">#7caa0e</color>
+
+    <color name="winnerone">#FABC29</color>
+    <color name="winnertwo">#FE842F</color>
+    <color name="winnerthree">#EE4B2F</color>
+    <color name="otherone">#29BDA3</color>
+
+
+    <color name="colorSliderBackground">#fff</color>
+    <color name="colorTextColor">#FFFFFFFF</color>
+
+</resources>

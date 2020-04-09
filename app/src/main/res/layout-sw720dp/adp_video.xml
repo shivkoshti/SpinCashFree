@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <com.skydoves.elasticviews.ElasticCardView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/videoClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="15">
+
+            <ImageView
+                android:id="@+id/viaLogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/nameList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="13"
+                android:fontFamily="@font/gametext"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </com.skydoves.elasticviews.ElasticCardView>
+</LinearLayout>

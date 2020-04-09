@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebackground"
+    tools:context=".OTP">
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:background="#BEFFFFFF"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/textHead1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gametext"
+            android:gravity="center"
+            android:text="We have sent the OTP on "
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/mobileText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gametext"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FF5722"
+            android:textSize="20dp" />
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#fd6e25"
+            app:bar_enabled="false"
+            app:bar_height="2dp"
+            app:height="50dp"
+            app:length="5"
+            app:otp_box_background="@drawable/bg_letter"
+            app:otp_text_size="24dp"
+            app:width="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/changeNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gametext"
+                android:gravity="center"
+                android:text="Change Number"
+                android:textColor="#FF5722"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/resend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gametext"
+                android:gravity="center"
+                android:text="Resend Otp!!!"
+                android:textColor="#FF5722"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/otpNext"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/liner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/nextbtn"
+        android:textSize="17sp"
+        app:button_duration="250"
+        app:button_scale="0.87" />
+
+</RelativeLayout>

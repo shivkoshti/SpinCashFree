@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebackground"
+    tools:context=".SpinHistory">
+
+    <com.github.jhonnyx2012.horizontalpicker.HorizontalPicker
+        android:id="@+id/datePickerTimeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePickerTimeline"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.webknight.spinncash.extra.ExpandableHeightGridView
+                android:id="@+id/spinHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp"
+                android:verticalSpacing="3dp"
+                tools:listitem="@layout/adp_leaderboard" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

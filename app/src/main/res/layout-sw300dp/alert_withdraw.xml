@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/withdrwalpopup" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="35dp">
+
+        <TextView
+            android:id="@+id/suchnanew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gametext"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Please select any of the payment methods mentioned below to get the withdrawable amount.\nThis methods cant be changed after this selection." />
+
+
+        <LinearLayout
+            android:id="@+id/paymentGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suchnanew"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.skydoves.elasticviews.ElasticImageView
+                android:id="@+id/paytm"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/paytmtext" />
+
+            <com.skydoves.elasticviews.ElasticImageView
+                android:id="@+id/bhim"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/bhimtext" />
+
+            <com.skydoves.elasticviews.ElasticImageView
+                android:id="@+id/paypal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/paypaltext" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/upiid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/paymentGroup"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/paymentSubmit"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/upiid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/submitbtn" />
+    </RelativeLayout>
+</RelativeLayout>

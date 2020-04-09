@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bgco"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lbg"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/rank"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/usernameList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:fontFamily="@font/gametext"
+            android:gravity="center"
+            android:text="---"
+            android:textColor="#fff" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:id="@+id/bonusWalletLeader"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/gametext"
+                android:gravity="center"
+                android:textColor="@color/darkgreen" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

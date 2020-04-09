@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skydoves.elasticviews.ElasticLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/settingbackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/musicLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gametext"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="BGM"
+                    android:textSize="20dp" />
+
+                <io.ghyeok.stickyswitch.widget.StickySwitch
+                    android:id="@+id/bgm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    app:ss_animationDuration="600"
+                    app:ss_animationType="curved"
+                    app:ss_iconPadding="18dp"
+                    app:ss_iconSize="22dp"
+                    app:ss_leftIcon="@drawable/ic_bgm_off_black_24dp"
+                    app:ss_rightIcon="@drawable/ic_bgm_on_black_24dp"
+                    app:ss_selectedTextSize="14sp"
+                    app:ss_sliderBackgroundColor="@color/colorSliderBackground"
+                    app:ss_switchColor="@color/green"
+                    app:ss_textColor="@color/colorTextColor"
+                    app:ss_textSize="12sp" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gametext"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="CLick"
+                    android:textSize="20dp" />
+
+                <io.ghyeok.stickyswitch.widget.StickySwitch
+                    android:id="@+id/click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+                    app:ss_animationDuration="600"
+                    app:ss_animationType="curved"
+                    app:ss_iconPadding="18dp"
+                    app:ss_iconSize="22dp"
+                    app:ss_leftIcon="@drawable/ic_click_off"
+                    app:ss_rightIcon="@drawable/ic_click_on"
+                    app:ss_selectedTextSize="14sp"
+                    app:ss_sliderBackgroundColor="@color/colorSliderBackground"
+                    app:ss_switchColor="@color/green"
+                    app:ss_textColor="@color/colorTextColor"
+                    app:ss_textSize="12sp" />
+
+            </LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/musicLayout"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.skydoves.elasticviews.ElasticImageView
+                    android:id="@+id/noticeClick"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/noticebtn" />
+
+                <com.skydoves.elasticviews.ElasticImageView
+                    android:id="@+id/helpClick"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:src="@drawable/helpbtn" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ads1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.skydoves.elasticviews.ElasticImageView
+                    android:id="@+id/aboutClick"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/aboutbtn" />
+
+                <com.skydoves.elasticviews.ElasticImageView
+                    android:id="@+id/contactClick"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:src="@drawable/contactusbtn" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ads2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.skydoves.elasticviews.ElasticImageView
+                    android:id="@+id/shareApp"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/shareit" />
+
+                <com.skydoves.elasticviews.ElasticImageView
+                    android:id="@+id/rateUs"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:src="@drawable/rateus" />
+            </LinearLayout>
+
+            <com.skydoves.elasticviews.ElasticImageView
+                android:id="@+id/howtoplayClick"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:src="@drawable/howtoplaybtn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.skydoves.elasticviews.ElasticLayout>

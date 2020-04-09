@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".Wallet">
+
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gamebackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.jetradarmobile.snowfall.SnowfallView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:snowflakeAlphaMax="255"
+                app:snowflakeAlphaMin="50"
+                app:snowflakeAngleMax="5"
+                app:snowflakeImage="@drawable/snowflake"
+                app:snowflakeSizeMax="32dp"
+                app:snowflakeSizeMin="18dp"
+                app:snowflakeSpeedMax="25"
+                app:snowflakeSpeedMin="25"
+                app:snowflakesAlreadyFalling="true"
+                app:snowflakesFadingEnabled="true"
+                app:snowflakesNum="250" />
+
+            <com.skydoves.elasticviews.ElasticCardView
+                android:id="@+id/currentWallet"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardCornerRadius="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardbg" />
+
+                <TextView
+                    android:id="@+id/naming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gametext"
+                    android:padding="5dp"
+                    android:text="Spin and Cash"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/todaysWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/gametext"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:textSize="25sp" />
+
+                    <com.skydoves.elasticviews.ElasticImageView
+                        android:id="@+id/rupiyo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ruy" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|bottom"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/mno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gametext"
+                        android:text="0000000000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/em"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gametext"
+                        android:text="hello@spincash.com"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <com.skydoves.elasticviews.ElasticImageView
+                        android:id="@+id/logo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/ranking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/gametext"
+                        android:gravity="center_horizontal"
+                        android:textColor="#fff"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </com.skydoves.elasticviews.ElasticCardView>
+
+            <LinearLayout
+                android:id="@+id/extraWallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentWallet"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.skydoves.elasticviews.ElasticCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/green"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/withdrawWalletLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="start"
+                            android:text="Withdrwable Amount"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/withdraw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:drawableEnd="@drawable/ic_rupee_indian"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="center_horizontal"
+                            android:text="Click to withdraw"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </com.skydoves.elasticviews.ElasticCardView>
+
+                <com.skydoves.elasticviews.ElasticCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/orange"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/bonusWalletLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="start"
+                            android:text="Total Withdrawal"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/bonusWallet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:drawableEnd="@drawable/ic_rupee_indian"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="center_horizontal"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </com.skydoves.elasticviews.ElasticCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/extraWallet1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/extraWallet"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="2">
+
+                <com.skydoves.elasticviews.ElasticCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/orange"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/rewardWalletLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="center"
+                            android:src="@drawable/scard"
+                            android:textColor="#fff"
+                            android:textSize="40sp" />
+                    </LinearLayout>
+                </com.skydoves.elasticviews.ElasticCardView>
+
+                <com.skydoves.elasticviews.ElasticCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/green"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/SpinhistoryLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/spinHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="center"
+                            android:text="Spin \nHistory"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </com.skydoves.elasticviews.ElasticCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/extraWalletTOP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/extraWallet1"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.skydoves.elasticviews.ElasticCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/green"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/topLayoutTOP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/toplist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="center"
+                            android:text="Top 10 Spinners"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </com.skydoves.elasticviews.ElasticCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/extraWallet2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/extraWalletTOP"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.skydoves.elasticviews.ElasticCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/orange"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/logoutLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/gametext"
+                            android:gravity="center"
+                            android:text="Logout"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </com.skydoves.elasticviews.ElasticCardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6922743115082307/8433608079">
+
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

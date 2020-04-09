@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "395416148254",
+    "firebase_url": "https://spin-and-cash-a8a1f.firebaseio.com",
+    "project_id": "spin-and-cash-a8a1f",
+    "storage_bucket": "spin-and-cash-a8a1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395416148254:android:e712df8f9147156d0f110f",
+        "android_client_info": {
+          "package_name": "com.webknight.spinncash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395416148254-o3l6ehm3t1c6lftv0m4ht2ednclugg54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPzixPRS-zhQXCOqcDKZaI78BhJ2iquik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395416148254-o3l6ehm3t1c6lftv0m4ht2ednclugg54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/howtoplay" />
+
+
+    <ScrollView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="110dp"
+        android:padding="10dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/howtoliner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gametext"
+                    android:text="Register with your mobile number"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/lineimg"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@id/howtoliner"
+                android:src="@drawable/hrline" />
+
+            <LinearLayout
+                android:id="@+id/howtoliner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineimg"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gametext"
+                    android:text="Enter your Name and \n email address"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/logo" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/lineimg2"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@id/howtoliner2"
+                android:src="@drawable/hrline" />
+
+            <LinearLayout
+                android:id="@+id/howtoliner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineimg2"
+                android:weightSum="2">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gametext"
+                    android:text="Pay 1000 One time Payment."
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/lineimg3"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@id/howtoliner3"
+                android:src="@drawable/hrline" />
+
+            <LinearLayout
+                android:id="@+id/howtoliner4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineimg3"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gametext"
+                    android:text="Spin your wheel And \n Collect Ponit 1025"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/logo" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/lineimg5"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@id/howtoliner4"
+                android:src="@drawable/hrline" />
+
+            <LinearLayout
+                android:id="@+id/howtoliner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineimg5"
+                android:weightSum="2">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gametext"
+                    android:text="Earn daily money and \n Have Fun Every Day"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trophybackground" />
+
+    <ListView
+        android:id="@+id/leaderBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="210dp"
+        android:dividerHeight="2dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/adp_trophy" />
+</RelativeLayout>
