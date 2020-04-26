@@ -21,7 +21,10 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="n">
-        <activity android:name="com.webknight.spinncash.top10List"></activity>
+        <activity
+            android:name="com.webknight.spinncash.top10List"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
 
         <service
             android:name="com.webknight.spinncash.MusicService"

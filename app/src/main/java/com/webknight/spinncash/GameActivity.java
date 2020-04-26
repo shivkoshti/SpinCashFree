@@ -672,33 +672,34 @@ public class GameActivity extends AppCompatActivity {
     }
 
     //load some initial data into out list
+    //here we maintain our products in various departments
+
     private void loadData() {
         addProduct("How to start earning ?", "First download the app from playstore.");
         addProduct("How to start earning ?", "Register yourself in the app using your mobile number which is registered on any of upi platform.");
-        addProduct("How to start earning ?", "Invest  One Time PAyment of 1000 ₹ using upi. and that's it !");
+//        addProduct("How to start earning ?", "Invest  One Time PAyment of 1000 ₹ using upi. and that's it !");
         addProduct("How to start earning ?", "Spin daily and collect money in the wallet.");
 
-        addProduct("How to invest the one time payment ?", "Once you register yourself in the app you will be redirected to the game page.");
+        /*addProduct("How to invest the one time payment ?", "Once you register yourself in the app you will be redirected to the game page.");
         addProduct("How to invest the one time payment ?", "On the upper top side there is a button named 'Add Money'. ");
         addProduct("How to invest the one time payment ?", "There are the payment methods shown.");
         addProduct("How to invest the one time payment ?", "On the second tab there is a QR code shown and the UPI also. Use this things to pay the One Time Payment.");
         addProduct("How to invest the one time payment ?", "Don't forget to take screenshot of the transaction and send it to the admin team to approve it.");
-        addProduct("How to invest the one time payment ?", "The admin team will approve your payment in 24 working hours.");
+        addProduct("How to invest the one time payment ?", "The admin team will approve your payment in 24 working hours.");*/
 
-        addProduct("Any limits ?", "Yes,A user can earn only 1025 points a day.Not more then that not less then that");
-        addProduct("Any limits ?", "But Don't worry.The user can spin more than 1025 points. But the points will be counted as Bonus Wallet.");
-        addProduct("Any limits ?", "On the new day the amount will be converted into 0");
-        addProduct("Any limits ?", "If the user will earn less then 1025 a day then he will not credited the for that points.");
+        addProduct("Any limits ?", "No limits,A user can earn unlimited points a day.");
+//        addProduct("Any limits ?", "But Don't worry.The user can spin more than 1025 points. But the points will be counted as Bonus Wallet.");
+//        addProduct("Any limits ?", "On the new day the amount will be converted into 0");
+//        addProduct("Any limits ?", "If the user will earn less then 1025 a day then he will not credited the for that points.");
 
         addProduct("How to withdraw ?", "On the Upper Top side when the user clicks the wallet,it will be redirected to the wallet page.");
         addProduct("How to withdraw ?", "By clicking on 'Withdrawable Amount' the user can request for withdrawal by using three payment platform defined.");
         addProduct("How to withdraw ?", "User can only request single payment at a time.He/She can not request until the last request will be approved.");
 
-        addProduct("What is Bonus wallet ?", "The bonus wallet can not be withdrawn.");
-        addProduct("What is Bonus wallet ?", "On the last day of the month, the top 3 Bonus winners will be gifted a particular amount defined by the admin");
+        /*addProduct("What is Bonus wallet ?", "The bonus wallet can not be withdrawn.");
+        addProduct("What is Bonus wallet ?", "On the last day of the month, the top 3 Bonus winners will be gifted a particular amount defined by the admin");*/
     }
 
-    //here we maintain our products in various departments
     private int addProduct(String department, String product) {
 
         int groupPosition = 0;
@@ -1041,13 +1042,13 @@ public class GameActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (selecting.equals("4")) {
                     Toasty.error(GameActivity.this, "Please select any of above", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(upi.getText().toString())) {
+                } else {
+                    if (TextUtils.isEmpty(upi.getText().toString())) {
 //                     loginmobile.setError("Required Field");
-                    Toasty.error(GameActivity.this, "Required Field.", Toast.LENGTH_SHORT, true).show();
-
+                        Toasty.error(GameActivity.this, "Required Field.", Toast.LENGTH_SHORT, true).show();
+                    } else
+                        checkConnection5(userid, selecting, upi.getText().toString());
                 }
-                checkConnection5(userid, selecting, upi.getText().toString());
             }
         });
     }

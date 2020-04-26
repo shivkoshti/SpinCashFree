@@ -26,8 +26,9 @@ android {
         manifestPlaceholders = [onesignal_app_id: 'c3d5a7e9-96b9-4651-8f82-42c81b1a1cf4', onesignal_google_project_number: 'REMOTE']
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 3
-        versionName "3.0"
+        versionCode 4 //also update splash screen
+        versionName "4.0"
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

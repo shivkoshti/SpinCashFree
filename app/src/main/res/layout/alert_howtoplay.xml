@@ -112,7 +112,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:fontFamily="@font/gametext"
-                    android:text="Pay 1000 One time Payment."
+                    android:text="Set your Witdrawal Method."
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -137,7 +137,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:fontFamily="@font/gametext"
-                    android:text="Spin your wheel And \n Collect Ponit 1025"
+                    android:text="Spin your wheel And \n Collect unlimited points"
                     android:textSize="15sp" />
 
                 <ImageView

@@ -16,6 +16,7 @@ import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,6 +42,7 @@ public class SplashScreen extends AppCompatActivity {
     String newUserId;
     String version_name;
     String version_link;
+    int versionCode = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,7 +139,8 @@ public class SplashScreen extends AppCompatActivity {
         @SuppressLint("NewApi")
         protected void onPostExecute(String status) {
             if (status.equals("200")) {
-                int versionCode = BuildConfig.VERSION_CODE;
+                /*int versionCode = BuildConfig.VERSION_CODE;
+                System.out.println("DODODODODOD" + String.valueOf(versionCode));*/
                 if (version_name.equals(String.valueOf(versionCode))) {
                     Intent intent = new Intent(SplashScreen.this, GameActivity.class);
                     intent.putExtra("popup", "1");
@@ -213,7 +216,8 @@ public class SplashScreen extends AppCompatActivity {
         @SuppressLint("NewApi")
         protected void onPostExecute(String status) {
             if (status.equals("200")) {
-                int versionCode = BuildConfig.VERSION_CODE;
+                /*int versionCode = BuildConfig.VERSION_CODE;
+                System.out.println("DODODODODOD" + String.valueOf(versionCode));*/
                 if (version_name.equals(String.valueOf(versionCode))) {
                     Intent intent = new Intent(SplashScreen.this, Login.class);
                     intent.putExtra("popup", "1");
